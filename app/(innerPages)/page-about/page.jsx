@@ -5,15 +5,11 @@ import About from "@/components/innerpages/About";
 import Brands from "@/components/common/Brands2";
 import About2 from "@/components/innerpages/About2";
 import AboutValues from "@/components/innerpages/AboutValues";
-import Feedback from "@/components/homes/home-2/Feedback";
-import Timeline from "@/components/homes/home-1/Timeline";
-import Team from "@/components/homes/home-1/Team";
 import Cta from "@/components/innerpages/Cta";
 export const metadata = {
-  title:
-    "About || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "About | Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Learn about Medcol's mission to help clinics start every visit prepared with AI-powered pre-visit summaries.",
 };
 export default function AboutPage() {
   return (
@@ -43,9 +39,6 @@ export default function AboutPage() {
           </div>
           <About2 />
           <AboutValues />
-          <Feedback />
-          <Timeline />
-          <Team />
           <Cta />
         </div>
         <Footer2 />

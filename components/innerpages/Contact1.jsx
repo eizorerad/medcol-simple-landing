@@ -69,16 +69,16 @@ export default function Contact1() {
                       <div className="panel z-1">
                         <div className="vstack gap-3">
                           <p className="fs-5 xl:fs-4 fw-medium">
-                            “This software simplifies the website building
-                            process, making it a breeze to manage our online
-                            presence.”
+                            "Medcol transformed how we prepare for patient
+                            visits. Our clinicians walk in ready, and patients
+                            feel heard from the very first moment."
                           </p>
                           <div className="vstack gap-0">
                             <p className="fs-6 lg:fs-5 fw-medium">
-                              David Larry
+                              Dr. Sarah Chen
                             </p>
                             <span className="fs-7 opacity-80">
-                              Founder &amp; CEO
+                              Clinic Director
                             </span>
                           </div>
                         </div>
@@ -132,7 +132,7 @@ export default function Contact1() {
                     </button>
                     <p className="text-center">
                       Or drop us a message via
-                      <a className="uc-link" href="mailto:hello@lexend.co">
+                      <a className="uc-link" href="mailto:leo@medcol.io">
                         email
                       </a>
                       .

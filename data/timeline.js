@@ -1,9 +1,9 @@
 export const timelineData = [
   {
     src: "/assets/images/template/timeline-01.png",
-    alt: "Where the idea come up of Lexend :)",
-    year: "2014",
-    description: "Where the idea come up of Lexend :)",
+    alt: "Where the idea for Medcol was born",
+    year: "2024",
+    description: "Where the idea for Medcol was born",
   },
   {
     src: "/assets/images/template/timeline-02.png",

@@ -6,9 +6,9 @@ import BreadCumb from "@/components/blog/BreadCumb";
 import Blogs4 from "@/components/blog/Blogs4";
 export const metadata = {
   title:
-    "Blog Author || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Blog Author || Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Medcol - AI-Powered Pre-Visit Preparation",
 };
 export default async function BlogAuthorPage(props) {
   const params = await props.params;

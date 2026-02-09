@@ -6,9 +6,9 @@ import Faq from "@/components/innerpages/Faq";
 import Team from "@/components/innerpages/Team";
 export const metadata = {
   title:
-    "Team || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Team || Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Medcol - AI-Powered Pre-Visit Preparation",
 };
 export default function TeamPage() {
   return (

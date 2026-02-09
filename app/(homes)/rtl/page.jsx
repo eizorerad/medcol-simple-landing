@@ -15,9 +15,9 @@ import Testimonials from "@/components/homes/home-4/Testimonials";
 import React from "react";
 export const metadata = {
   title:
-    "Rtl Home Page || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Rtl Home Page || Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Medcol - AI-Powered Pre-Visit Preparation",
 };
 export default function HomePageRtl() {
   return (

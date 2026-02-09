@@ -20,49 +20,17 @@ export default function Footer3() {
               <div>
                 <div className="uc-logo">
                   <Link
-                    className="panel text-none "
-                    href={`/home-4`}
-                    style={{ width: 140 }}
+                    className="panel text-none hstack gap-1"
+                    href={`/`}
                   >
                     <Image
-                      className="dark:d-none"
-                      alt=""
-                      src="/assets/images/common/logo-light.svg"
-                      width="117"
-                      height="40"
+                      alt="Medcol"
+                      src="/assets/images/common/android-chrome-192x192.png"
+                      width="32"
+                      height="32"
                     />
-                    <Image
-                      className="d-none dark:d-block"
-                      alt=""
-                      src="/assets/images/common/logo-dark.svg"
-                      width="117"
-                      height="40"
-                    />
+                    <span className="fw-bold fs-5" style={{ letterSpacing: "-0.5px" }}>Medcol</span>
                   </Link>
-                </div>
-              </div>
-              <div>
-                <div className="hstack items-start gap-1">
-                  <a href="#">
-                    <Image
-                      className="text-gray-900 dark:text-white hover:text-opacity-70 transition-all duration-150 image-filter"
-                      alt="Google Play Store"
-                      data-uc-svg=""
-                      src="/assets/images/common/playstore.svg"
-                      width="135"
-                      height="40"
-                    />
-                  </a>
-                  <a href="#">
-                    <Image
-                      className="text-gray-900 dark:text-white hover:text-opacity-70 transition-all duration-150 image-filter"
-                      alt="Apple Store"
-                      data-uc-svg=""
-                      src="/assets/images/common/appstore.svg"
-                      width="134"
-                      height="40"
-                    />
-                  </a>
                 </div>
               </div>
             </div>
@@ -93,17 +61,14 @@ export default function Footer3() {
           <div className="uc-footer-bottom panel vstack gap-4 pt-4 lg:pt-6 border-top dark:text-white">
             <div className="vstack sm:hstack justify-center items-center gap-1 lg:gap-2">
               <p className="opacity-60">
-                Lexend © {new Date().getFullYear()}, All rights reserved.
+                Medcol © {new Date().getFullYear()}, All rights reserved.
               </p>
               <ul className="nav-x gap-2 fw-medium">
                 <li>
-                  <a href="#">Privacy notice</a>
+                  <Link href="/page-privacy">Privacy notice</Link>
                 </li>
                 <li>
-                  <a href="#">Legal</a>
-                </li>
-                <li>
-                  <a href="#">Cookie settings</a>
+                  <Link href="/page-terms">Legal</Link>
                 </li>
               </ul>
             </div>

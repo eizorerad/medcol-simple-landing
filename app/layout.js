@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" dir="ltr">
-      <body>
+      <body suppressHydrationWarning>
         {" "}
         <Context>
           <ParallaxProvider>{children}</ParallaxProvider>

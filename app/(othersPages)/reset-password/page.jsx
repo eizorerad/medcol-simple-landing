@@ -1,9 +1,9 @@
 import Resetpass1 from "@/components/otherPages/Resetpass1";
 export const metadata = {
   title:
-    "Reset Password || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Reset Password || Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Medcol - AI-Powered Pre-Visit Preparation",
 };
 export default function ResetPasswordPage() {
   return (

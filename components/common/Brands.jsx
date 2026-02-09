@@ -1,40 +1,28 @@
 "use client";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { brands } from "@/data/brands";
 import Image from "next/image";
 
 export default function Brands() {
   return (
-    <Swiper
-      slidesPerView={2}
-      centeredSlides={true}
-      centeredSlidesBounds={true}
-      breakpoints={{
-        640: {
-          slidesPerView: 4,
-          centeredSlides: false,
-          centeredSlidesBounds: false,
-        },
-        768: {
-          slidesPerView: 6,
-          spaceBetween: 80,
-        },
-      }}
-    >
-      {brands.map((brand, index) => (
-        <SwiperSlide
-          className="brand-item swiper-slide text-center"
-          key={index}
+    <div className="hstack justify-center gap-4 lg:gap-8 flex-wrap">
+      {brands.map((brand) => (
+        <a
+          className="brand-item text-center"
+          key={brand.id}
+          href={brand.href}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Image
             className="brand-item-image h-40px image-filter"
+            style={{ objectFit: "contain", width: "auto", height: "40px" }}
             src={brand.src}
             width={165}
             height={48}
             alt={brand.alt}
           />
-        </SwiperSlide>
+        </a>
       ))}
-    </Swiper>
+    </div>
   );
 }

@@ -43,15 +43,14 @@ export default function About() {
           >
             <div className="vstack items-center gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-850px mx-auto text-center">
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                About Lexend.
+                About Medcol.
               </h1>
               <p className="fs-6 md:fs-5 text-dark dark:text-white text-opacity-70">
-                In 2014, Steven Smith have gotten so much of our time back that
-                we're now able to put towards things that are actually helping
-                our company as opposed to just throwing content out there. and
-                the idea of Lexend was born. Today, Lexend empowers teams to
-                easily communicate with customers through personalized documents
-                that can be created in minutes, build meaningful relationships.
+                Medcol was born from a simple observation: clinicians spend too
+                much time gathering information that patients already know.
+                We built an AI-powered platform that turns patient stories into
+                clear, clinician-ready summaries before the appointment,
+                so every visit starts prepared and every patient feels heard.
               </p>
             </div>
             <div className="panel row child-cols-12 col-match g-1 sm:g-2">
@@ -60,7 +59,7 @@ export default function About() {
                   <Image
                     className="media-cover image uc-transition-scale-up uc-transition-opaque"
                     alt="About image"
-                    src="/assets/images/template/hero-about-01.jpg"
+                    src="/assets/images/template/doctors-about.jpeg"
                     width="1000"
                     height="1500"
                   />
@@ -89,7 +88,7 @@ export default function About() {
                     <Image
                       className="media-cover image"
                       alt="About image"
-                      src="/assets/images/template/hero-about-02.jpg"
+                      src="/assets/images/template/clinic.jpeg"
                       width="1000"
                       height="667"
                     />

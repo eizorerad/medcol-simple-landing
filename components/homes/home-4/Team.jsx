@@ -30,7 +30,7 @@ export default function Team() {
               </div>
               <div className="content panel">
                 <div
-                  className="row child-cols-6 sm:child-cols-4 lg:child-cols-3 col-match gx-2 gy-6"
+                  className="row child-cols-6 sm:child-cols-4 col-match gx-2 gy-6 justify-center"
                   data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
                 >
                   {teamMembers2.map((member, index) => (

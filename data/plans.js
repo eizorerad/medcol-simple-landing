@@ -6,25 +6,25 @@ export const panelsData = [
     altText: "impact-icon",
     title: "Make an impact",
     description:
-      "We’re building something big. Something that has the power to change the trajectory of any sized business for the better.",
+      "We believe every patient deserves a visit that starts with understanding. Medcol is built to make that the default, not the exception.",
   },
   {
     id: 2,
     lightImgSrc: "/assets/images/template/icon-trophy.svg",
     darkImgSrc: "/assets/images/template/icon-trophy-dark.svg",
-    altText: "crown-icon",
+    altText: "learning-icon",
     title: "Learn",
     description:
-      "Lexend team are masters of their craft. Even though we’re all experts in our respective fields, we always make time to expand our minds.",
+      "Our team combines clinical insight with technical expertise. We stay curious, listen to clinicians, and continuously improve how we serve them.",
   },
   {
     id: 3,
     lightImgSrc: "/assets/images/template/icon-globe.svg",
     darkImgSrc: "/assets/images/template/icon-globe-dark.svg",
-    altText: "fun-icon",
-    title: "Have fun",
+    altText: "trust-icon",
+    title: "Trust",
     description:
-      "We work hard and play harder. We believe in the importance of celebrating wins big or small, for the business or individuals.",
+      "Patient data is sacred. We earn trust through transparency, privacy-first design, and never selling data. No ads, no shortcuts.",
   },
   {
     id: 4,
@@ -33,6 +33,6 @@ export const panelsData = [
     altText: "empathy-icon",
     title: "Empathy",
     description:
-      "We strive to be empathetic to every customer and colleague and by doing so we can provide a better experience for all.",
+      "We strive to understand both sides of the clinical encounter, building tools that help patients feel heard and clinicians feel prepared.",
   },
 ];

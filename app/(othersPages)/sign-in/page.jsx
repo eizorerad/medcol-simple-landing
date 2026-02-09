@@ -1,9 +1,9 @@
 import SignIn from "@/components/otherPages/SignIn";
 export const metadata = {
   title:
-    "Signin 1 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Signin 1 || Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Medcol - AI-Powered Pre-Visit Preparation",
 };
 export default function SigninPage1() {
   return (

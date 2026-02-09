@@ -5,9 +5,9 @@ import Breadcumb from "@/components/shop/Breadcumb";
 import Cart1 from "@/components/shop/Cart1";
 export const metadata = {
   title:
-    "Shop Cart || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Shop Cart || Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Medcol - AI-Powered Pre-Visit Preparation",
 };
 export default function ShopCartPage1() {
   return (

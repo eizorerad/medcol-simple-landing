@@ -5,9 +5,9 @@ import Breadcumb from "@/components/otherPages/Breadcumb";
 import Signup2 from "@/components/otherPages/Signup2";
 export const metadata = {
   title:
-    "Signup 2 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Signup 2 || Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Medcol - AI-Powered Pre-Visit Preparation",
 };
 export default function SignupPage2() {
   return (

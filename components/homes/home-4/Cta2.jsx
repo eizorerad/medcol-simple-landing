@@ -16,7 +16,7 @@ export default function Cta2() {
                 Start every visit prepared.
               </h2>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70 mt-1 lg:mt-2">
-                Simple pricing for clinics of all sizes. From individual practitioners to enterprise health systems.
+                Join the growing number of clinics that start every visit prepared.
               </p>
               <div className="vstack sm:hstack justify-center gap-1 lg:gap-2 mt-2 lg:mt-4 fdr">
                 <a
@@ -31,7 +31,7 @@ export default function Cta2() {
                   href={`/page-contact`}
                   className="btn btn-md btn-primary rounded-default text-white shadow-xs"
                 >
-                  Start free trial
+                  Request a demo
                 </Link>
               </div>
               <p className="fs-7 text-dark dark:text-white text-opacity-70 mt-2">

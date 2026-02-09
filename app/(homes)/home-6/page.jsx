@@ -15,9 +15,9 @@ import VideoComponent from "@/components/homes/home-6/VideoComponent";
 import React from "react";
 export const metadata = {
   title:
-    "Home 6 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Home 6 || Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Medcol - AI-Powered Pre-Visit Preparation",
 };
 export default function HomePage6() {
   return (

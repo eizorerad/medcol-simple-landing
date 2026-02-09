@@ -211,26 +211,6 @@ export const featureItems = [
     icon: "unicon-course",
     reverseOrder: true,
   },
-  {
-    imageSrc: "/assets/images/template/home-four-feature-03.png",
-    altText: "Clinician Intent Setting",
-    title: "Clinician Intent Setting",
-    description:
-      "Clinicians can set visit context such as the visit purpose, must-not-miss risks, or focus areas—so the summary is aligned with how the visit will run.",
-    linkText: "Learn more",
-    icon: "unicon-volume-block-storage",
-    reverseOrder: false,
-  },
-  {
-    imageSrc: "/assets/images/template/home-four-feature-04.png",
-    altText: "Operational Readiness Dashboard",
-    title: "Operational Readiness Dashboard",
-    description:
-      "Clinics can see who is prepared vs not prepared, send reminders, and reduce last-minute intake burden at reception. Smoother flow on busy days.",
-    linkText: "Learn more",
-    icon: "unicon-model",
-    reverseOrder: true,
-  },
 ];
 
 export const featureItems2 = [
@@ -331,7 +311,7 @@ export const features5 = [
 export const features6 = [
   {
     id: 1,
-    imgSrc: "/assets/images/template/feature-01.svg",
+    imgSrc: "/assets/images/template/feature-01.jpg",
     imgAlt: "Patient Pre-Visit Interview",
     title: "Patient Pre-Visit Interview",
     description:
@@ -340,7 +320,7 @@ export const features6 = [
   },
   {
     id: 2,
-    imgSrc: "/assets/images/template/feature-02.svg",
+    imgSrc: "/assets/images/template/feature-02.jpg",
     imgAlt: "Clinician-Ready Summary",
     title: "Clinician-Ready Summary",
     description:
@@ -349,7 +329,7 @@ export const features6 = [
   },
   {
     id: 3,
-    imgSrc: "/assets/images/template/feature-03.svg",
+    imgSrc: "/assets/images/template/feature-03.jpg",
     imgAlt: "Clinician Intent Setting",
     title: "Clinician Intent Setting",
     description:
@@ -358,7 +338,7 @@ export const features6 = [
   },
   {
     id: 4,
-    imgSrc: "/assets/images/template/feature-04.svg",
+    imgSrc: "/assets/images/template/feature-04.jpg",
     imgAlt: "Operational Readiness",
     title: "Operational Readiness",
     description:

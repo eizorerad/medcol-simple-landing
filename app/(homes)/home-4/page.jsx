@@ -8,7 +8,6 @@ import Facts from "@/components/homes/home-4/Facts";
 import Faq from "@/components/homes/home-4/Faq";
 import Features from "@/components/homes/home-4/Features";
 import Hero from "@/components/homes/home-4/Hero";
-import Pricing from "@/components/homes/home-4/Pricing";
 import Team from "@/components/homes/home-4/Team";
 import Testimonials from "@/components/homes/home-4/Testimonials";
 import React from "react";
@@ -29,7 +28,6 @@ export default function HomePage4() {
           <Facts />
           <Features />
           <Cta />
-          <Pricing />
           <Testimonials />
           <Faq />
           <Team />

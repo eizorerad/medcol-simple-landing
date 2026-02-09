@@ -1,33 +1,20 @@
 export const testimonials = [
   {
-    quote: `“Most of our time used to be taken up by administrative work whereas now we can focus on
-      building out programs to help our employees. 
-      Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Quas nisi consectetur adipisci eaque. Porro,
-      atque.”`,
-    name: "Mark Zellers",
-    position: "Director of Human Resources.",
+    quote: `"Before Medcol, the first five minutes of every visit were spent catching up on why the patient was there. Now I walk in already knowing their story—it has completely changed how I connect with patients and manage my time."`,
+    name: "Dr. Sarah Miller",
+    position: "Family Medicine Physician",
     imgSrc: "/assets/images/portrait/01.jpg",
   },
   {
-    quote: `“I can create a custom proposal with dynamic pricing
-      tables, and get approval from my boss all within 36
-      minutes and looks fantastic.
-      Dolor sit amet consectetur adipisicing elit. Quas
-      nisi consectetur adipisci eaque. Porro, atque.”`,
-    name: "André Garcia",
-    position: "Client Success Manager",
+    quote: `"As a clinic director, I was skeptical about adding another tool. But Medcol reduced our intake backlog by 40% in the first month. Patients arrive prepared, staff spend less time on paperwork, and our providers finish on time."`,
+    name: "Dr. Rajesh Sharma",
+    position: "Clinic Director, Primary Care",
     imgSrc: "/assets/images/portrait/02.jpg",
   },
   {
-    quote: `“This powerful tool eliminates the need to leave
-      Salesforce to get things done, 
-      quas libero placeat voluptates sed sequi? Corporis,
-      earum vitae. 
-      Tempore pariatur dignissimos coming for great tool
-      of repellat quae a eaque culpa iusto fugit.”`,
-    name: "Matt Henderson",
-    position: "Director of Sales Operations",
+    quote: `"I used to dread explaining my symptoms under pressure. With Medcol, I shared everything from home at my own pace. When I met my doctor, she already understood my situation—it was the most productive visit I have ever had."`,
+    name: "Dra. Apolonia V. González Rodríguez",
+    position: "Internal Medicine Specialist",
     imgSrc: "/assets/images/portrait/03.jpg",
   },
 ];

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+
 import LanguageSelect from "../common/LanguageSelect";
 import { footerLinks, socialLinks } from "@/data/footer";
 
@@ -15,40 +15,20 @@ export default function Footer2() {
                 <div className="col-12 lg:col-4">
                   <div className="panel vstack items-start gap-4 ltr:md:pe-8 rtl:md:ps-8">
                     <div className="vstack gap-2">
-                      <Link href={`/`}>
+                      <Link href={`/`} className="hstack gap-1 text-none">
                         <img
-                          className=" text-primary"
-                          alt="Lexend"
-                          src="/assets/images/common/logo-dark.svg"
+                          alt="Medcol"
+                          src="/assets/images/common/android-chrome-192x192.png"
+                          width="32"
+                          height="32"
                         />
+                        <span className="fw-bold fs-5 text-white" style={{ letterSpacing: "-0.5px" }}>Medcol</span>
                       </Link>
                       <p>
-                        This powerfull tool eliminates the need to leave
-                        Salesforce to get things done as I can create a custom
-                        proposal with dynamic pricing tables.
+                        Medcol helps clinics start every visit prepared by
+                        turning patient stories into clear, clinician-ready
+                        summaries before the appointment.
                       </p>
-                    </div>
-                    <div className="hstack items-start gap-1">
-                      <a href="#">
-                        <Image
-                          className="text-gray-900 dark:text-white hover:text-opacity-70 transition-all duration-150"
-                          alt="Google Play Store"
-                          data-uc-svg=""
-                          src="/assets/images/common/playstore.svg"
-                          width="135"
-                          height="40"
-                        />
-                      </a>
-                      <a href="#">
-                        <Image
-                          className="text-gray-900 dark:text-white hover:text-opacity-70 transition-all duration-150"
-                          alt="Apple Store"
-                          data-uc-svg=""
-                          src="/assets/images/common/appstore.svg"
-                          width="134"
-                          height="40"
-                        />
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -68,17 +48,14 @@ export default function Footer2() {
             <div className="uc-footer-bottom panel vstack lg:hstack gap-4 justify-center lg:justify-between pt-4 lg:pt-6 border-top dark:text-white">
               <div className="vstack sm:hstack justify-center lg:justify-start items-center lg:items-start gap-1 lg:gap-2">
                 <p className="opacity-60">
-                  Lexend © {new Date().getFullYear()}, All rights reserved.
+                  Medcol © {new Date().getFullYear()}, All rights reserved.
                 </p>
                 <ul className="nav-x gap-2 fw-medium">
                   <li>
-                    <a href="#">Privacy notice</a>
+                    <Link href="/page-privacy">Privacy notice</Link>
                   </li>
                   <li>
-                    <a href="#">Legal</a>
-                  </li>
-                  <li>
-                    <a href="#">Cookie settings</a>
+                    <Link href="/page-terms">Legal</Link>
                   </li>
                 </ul>
               </div>

@@ -2,9 +2,12 @@
 import Link from "next/link";
 import RelatedBlogs from "./RelatedBlogs";
 import Image from "next/image";
-import { Gallery, Item } from "react-photoswipe-gallery";
+import BlogContentRenderer, { ContentTags } from "./BlogContentRenderer";
+import PostNavigation from "./PostNavigation";
+import { getContentByTitle } from "@/data/blogContent";
 
 export default function BlogDetails1({ blogItem }) {
+  const content = getContentByTitle(blogItem.title);
   return (
     <>
       <div
@@ -109,8 +112,8 @@ export default function BlogDetails1({ blogItem }) {
                 <figure className="featured-image m-0 rounded ratio ratio-2x1 rounded uc-transition-toggle overflow-hidden">
                   <Image
                     className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                    alt="AI-Powered Clinical Reasoning"
-                    src="/assets/images/blog/post-full.jpg"
+                    alt={content?.heroImage?.alt || blogItem.title}
+                    src={content?.heroImage?.src || "/assets/images/blog/post-full.jpg"}
                     width="1280"
                     height="853"
                   />
@@ -121,246 +124,9 @@ export default function BlogDetails1({ blogItem }) {
         </div>
         <div className="panel mt-4 lg:mt-6 xl:mt-9">
           <div className="container max-w-lg">
-            <Gallery>
-              <div
-                className="post-content panel fs-6 md:fs-5"
-                data-uc-lightbox="animation: scale"
-              >
-                <p>
-                  The healthcare industry is undergoing a profound transformation 
-                  driven by artificial intelligence. At Medcol, we're at the forefront 
-                  of this revolution, developing AI-powered clinical reasoning systems 
-                  that support doctors in making better decisions, not just faster ones. 
-                  Our approach is fundamentally different from generic AI chatbots—we've 
-                  built a multi-agent system that mirrors how real medical teams think 
-                  and collaborate.
-                </p>
-                <p className="mt-3">
-                  The single most inefficient step in healthcare isn't during the patient 
-                  visit; it's the cognitive scramble doctors face before it starts. 
-                  Clinicians waste critical minutes per encounter piecing together 
-                  fragmented data "cold," leading to rushed initial judgments and 
-                  diagnostic pathways seeded with inefficiency from the outset.
-                </p>
-                <div className="panel mt-3">
-                  <figure className="float-end ms-3 mb-1">
-                    <Item
-                      original="/assets/images/blog/post-1.jpg"
-                      thumbnail="/assets/images/blog/post-1.jpg"
-                      width="1280"
-                      height="853"
-                    >
-                      {({ ref, open }) => (
-                        <figure className="featured-image m-0 rounded ratio ratio-1x1 sm:w-300px uc-transition-toggle overflow-hidden">
-                          <Image
-                            className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                            alt="Clinical AI Decision Support"
-                            src="/assets/images/blog/post-1.jpg"
-                            width="1280"
-                            height="853"
-                            ref={ref}
-                          />
-                          <a
-                            onClick={open}
-                            className="position-cover"
-                            data-caption="Clinical AI Decision Support"
-                          ></a>
-                        </figure>
-                      )}
-                    </Item>
-                    <figcaption className="fs-7 mt-1 text-center text-gray-400 dark:text-gray-200">
-                      Clinical AI Decision Support
-                    </figcaption>
-                  </figure>
-                  <p>
-                    Medcol solves this problem by automating pre-visit data collection 
-                    and supporting doctors with structured AI-driven reasoning. Our 
-                    system prepares the case like a medical intern, thinks through it 
-                    like a panel of specialists, and hands the doctor clarity, not chaos.
-                  </p>
-                  <p className="mt-3">
-                    Unlike ChatGPT which provides general answers, Medcol offers 
-                    structured, agent-based reasoning tied to medical logic and 
-                    guidelines. Instead of "text completion," Medcol simulates 
-                    clinical thought, includes audit trails, and integrates with 
-                    medical records, ensuring safety, clarity, and trust.
-                  </p>
-                  <p className="mt-3">
-                    Our proprietary ConSilico system uses a multi-agent architecture 
-                    where each AI agent simulates the perspective of a specialist 
-                    (e.g., cardiologist, neurologist). They collaboratively reason 
-                    through complex cases using a shared structured knowledge base 
-                    called MedGraph, which allows contextual and traceable decision-making.
-                  </p>
-                </div>
-                <h4 className="h4 xl:h3 mt-4 mb-2 xl:mb-3">The ConSilico Advantage</h4>
-                <p>
-                  At the core of Medcol is ConSilico—a multi-agent AI system that 
-                  mirrors the way real doctors think in teams. Each agent represents 
-                  a medical specialty (like cardiology or neurology) and contributes 
-                  its perspective to simulate a clinical concilium. This layered 
-                  reasoning allows for nuanced, safe, and explainable decision support.
-                </p>
-                <p className="mt-3">
-                  To support meaningful reasoning, agents operate on MedGraph—a 
-                  structured, dynamic knowledge graph built from trusted clinical 
-                  sources, guidelines, and real-world patterns. Unlike traditional 
-                  LLMs, MedGraph ensures traceability, logical flow, and consistent 
-                  clinical context in every output.
-                </p>
-                <figure className="my-3 sm:my-4">
-                  <Item
-                    original="/assets/images/blog/post-2.jpg"
-                    thumbnail="/assets/images/blog/post-2.jpg"
-                    width="1280"
-                    height="853"
-                  >
-                    {({ ref, open }) => (
-                      <figure className="featured-image m-0 rounded ratio ratio-3x2 uc-transition-toggle overflow-hidden">
-                        <Image
-                          className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                          alt="Multi-Agent Clinical Reasoning"
-                          src="/assets/images/blog/post-2.jpg"
-                          width="1280"
-                          height="853"
-                          ref={ref}
-                        />
-                        <a
-                          onClick={open}
-                          className="position-cover"
-                          data-caption="Multi-Agent Clinical Reasoning"
-                        ></a>
-                      </figure>
-                    )}
-                  </Item>
-                  <figcaption className="fs-7 mt-1 text-center text-gray-400 dark:text-gray-200">
-                    Multi-Agent Clinical Reasoning
-                  </figcaption>
-                </figure>
-                <p>
-                  Medcol leverages fine-tuned language models optimized for healthcare 
-                  dialogue, with inference pipelines engineered for low latency and 
-                  high accuracy. The platform is modular, cloud-ready, and compatible 
-                  with standards like FHIR and HL7, enabling smooth integration with 
-                  hospital and telemedicine systems.
-                </p>
-                <p className="mt-3">
-                  We prioritize security, privacy, and regulatory compliance from 
-                  the ground up. Medcol adheres to HIPAA and GDPR standards, employs 
-                  data anonymization techniques, and supports secure, auditable 
-                  interactions between patient data and AI.
-                </p>
-                <h4 className="h4 xl:h3 mt-4 mb-2 xl:mb-3">
-                  Real-World Traction and Adoption
-                </h4>
-                <p>
-                  Medcol is already embedded into Kazakhstan's national eGov healthcare 
-                  portal, powering AI-assisted patient intake and triage for millions 
-                  of citizens. We've also integrated with private health innovators 
-                  like CheckDoc and ValeoHealth, proving our ability to work across 
-                  both public and private ecosystems.
-                </p>
-                <p className="mt-3">
-                  Live pilots have demonstrated operational feasibility and scalability. 
-                  Initial deployments have processed thousands of real patient 
-                  interactions, providing valuable feedback loops for refinement 
-                  and validation. More than 300 medical professionals have tested 
-                  and provided feedback on Medcol, helping shape its evolution to 
-                  meet real-world clinical needs.
-                </p>
-                <div className="panel my-3">
-                  <figure className="float-start me-3 mb-0">
-                    <Item
-                      original="/assets/images/blog/post-3.jpg"
-                      thumbnail="/assets/images/blog/post-3.jpg"
-                      width="1280"
-                      height="853"
-                    >
-                      {({ ref, open }) => (
-                        <figure className="featured-image m-0 rounded ratio ratio-1x1 sm:w-300px uc-transition-toggle overflow-hidden">
-                          <Image
-                            className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                            alt="Healthcare AI Integration"
-                            src="/assets/images/blog/post-3.jpg"
-                            width="1280"
-                            height="854"
-                            ref={ref}
-                          />
-                          <a
-                            onClick={open}
-                            className="position-cover"
-                            data-caption="Healthcare AI Integration"
-                          ></a>
-                        </figure>
-                      )}
-                    </Item>
-                    <figcaption className="fs-7 mt-1 text-center text-gray-400 dark:text-gray-200">
-                      Healthcare AI Integration
-                    </figcaption>
-                  </figure>
-                  <p>
-                    The global AI in healthcare market is expanding at a CAGR of 
-                    over 40%, expected to reach $188 billion by 2030. Clinical 
-                    decision support, triage automation, and virtual care are 
-                    among the fastest-growing verticals.
-                  </p>
-                  <p>
-                    Healthcare systems globally are facing clinician shortages, 
-                    rising costs, and increasing demand for personalized care. 
-                    Medcol is positioned at the intersection of telemedicine, 
-                    remote diagnostics, and AI-augmented clinical workflows—
-                    delivering value where the need is most acute.
-                  </p>
-                  <p>
-                    Strategic partnerships are in development across GCC countries, 
-                    Africa, and Southeast Asia, where digital transformation is 
-                    accelerating and the need for intelligent clinical infrastructure 
-                    is immediate.
-                  </p>
-                </div>
-                <p>
-                  Medcol operates as a B2B SaaS platform through API subscriptions 
-                  and enterprise licensing. Telemedicine platforms, insurance 
-                  companies, and health systems pay for access to our AI decision 
-                  support engine.
-                </p>
-                <p className="mt-3">
-                  For large clients like government portals or hospital networks, 
-                  we offer white-label integrations, custom workflows, and clinical 
-                  consulting to support change management and internal adoption.
-                </p>
-              </div>
-            </Gallery>
+            <BlogContentRenderer content={content} />
             <div className="post-footer panel vstack sm:hstack gap-3 justify-between justifybetween border-top py-4 mt-4 xl:py-9 xl:mt-9">
-              <ul className="nav-x gap-narrow text-primary">
-                <li>
-                  <span className="text-black dark:text-white me-narrow">
-                    Tags:
-                  </span>
-                </li>
-                <li>
-                  <a href="#" className="gap-0">
-                    Healthcare AI
-                    <span className="text-black dark:text-white">,</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="gap-0">
-                    Clinical Decision Support
-                    <span className="text-black dark:text-white">,</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="gap-0">
-                    Telemedicine <span className="text-black dark:text-white">,</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="gap-0">
-                    Multi-Agent AI
-                  </a>
-                </li>
-              </ul>
+              <ContentTags content={content} />
               <ul className="post-share-icons nav-x gap-narrow">
                 <li className="me-1">
                   <span className="text-black dark:text-white">Share:</span>
@@ -442,64 +208,7 @@ export default function BlogDetails1({ blogItem }) {
                 </div>
               </div>
             </div>
-            <div className="post-navigation panel vstack sm:hstack justify-between gap-2 mt-8 xl:mt-9 fdr-min-600">
-              <div className="new-post panel hstack w-100 sm:w-1/2">
-                <div className="panel hstack justify-center w-100px h-100px">
-                  <figure className="featured-image m-0 rounded ratio ratio-1x1 uc-transition-toggle overflow-hidden">
-                    <Image
-                      className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                      alt="Pre-Visit Automation in Healthcare"
-                      src="/assets/images/blog/img-02.jpg"
-                      width="1280"
-                      height="853"
-                    />
-                    <Link
-                      href={`/blog-details/18`}
-                      className="position-cover"
-                      data-caption="Pre-Visit Automation in Healthcare"
-                    ></Link>
-                  </figure>
-                </div>
-                <div className="panel vstack justify-center px-2 gap-1 w-1/3">
-                  <span className="fs-7 opacity-60">Prev Article</span>
-                  <h6 className="h6 lg:h5 m-0">
-                    Pre-Visit Automation: Solving the Cognitive Scramble
-                  </h6>
-                </div>
-                <Link
-                  href={`/blog-details/18`}
-                  className="position-cover"
-                ></Link>
-              </div>
-              <div className="new-post panel hstack w-100 sm:w-1/2">
-                <div className="panel vstack justify-center px-2 gap-1 w-1/3 text-end rtl:text-start">
-                  <span className="fs-7 opacity-60">Next Article</span>
-                  <h6 className="h6 lg:h5 m-0">
-                    HIPAA & GDPR Compliance in Healthcare AI
-                  </h6>
-                </div>
-                <div className="panel hstack justify-center w-100px h-100px">
-                  <figure className="featured-image m-0 rounded ratio ratio-1x1 uc-transition-toggle overflow-hidden">
-                    <Image
-                      className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                      alt="HIPAA & GDPR Compliance"
-                      src="/assets/images/blog/img-03.jpg"
-                      width="1280"
-                      height="853"
-                    />
-                    <Link
-                      href={`/blog-details/19`}
-                      className="position-cover"
-                      data-caption="HIPAA & GDPR Compliance"
-                    ></Link>
-                  </figure>
-                </div>
-                <Link
-                  href={`/blog-details/19`}
-                  className="position-cover"
-                ></Link>
-              </div>
-            </div>
+            <PostNavigation blogItem={blogItem} />
             <div className="post-related panel border-top pt-2 mt-8 xl:mt-9">
               <h4 className="h5 xl:h4 mb-5 xl:mb-6">Related to this topic:</h4>
               <div className="row child-cols-6 md:child-cols-4 gx-2 gy-4 sm:gx-3 sm:gy-6">

@@ -17,8 +17,8 @@ export default function Newsletter() {
                 <div className="vstack gap-2 max-w-500px xl:max-w-600px">
                   <h2 className="h4 md:h3 lg:h2 m-0">Get the latest updates</h2>
                   <p className="fs-6 lg:fs-5">
-                    Subscribe to get our most-popular proposal eBook and more
-                    top revenue content to help you send docs faster.
+                    Subscribe to get the latest insights on healthcare AI,
+                    pre-visit preparation, and clinical workflow optimization.
                   </p>
                   <form
                     onSubmit={(e) => e.preventDefault()}

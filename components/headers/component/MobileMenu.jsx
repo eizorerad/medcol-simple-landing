@@ -85,15 +85,15 @@ export default function MobileMenu() {
           <div className="uc-logo">
             <Link
               href={`/`}
-              className="h5 text-none text-gray-900 dark:text-white"
+              className="h5 text-none text-gray-900 dark:text-white hstack gap-1"
             >
               <Image
-                className="w-32px"
-                alt="Lexend"
-                src="/assets/images/common/logo-mark.svg"
-                width="34"
-                height="34"
+                alt="Medcol"
+                src="/assets/images/common/android-chrome-192x192.png"
+                width="32"
+                height="32"
               />
+              <span className="fw-bold fs-5" style={{ letterSpacing: "-0.5px" }}>Medcol</span>
             </Link>
           </div>
           <button
@@ -231,15 +231,7 @@ export default function MobileMenu() {
             ))}
             <li className="hr opacity-10 my-1" />
             <li>
-              <Link href={`/sign-up`}>Create an account</Link>
-            </li>
-            <li>
               <Link href={`/sign-in`}>Log in</Link>
-            </li>
-            <li>
-              <a href="https://themeforest.net/user/ib-themes/portfolio">
-                Buy Template
-              </a>
             </li>
           </ul>
           <ul className="social-icons nav-x mt-4">

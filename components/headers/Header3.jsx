@@ -65,24 +65,16 @@ export default function Header3() {
             <div className="uc-navbar-left">
               <div className="uc-logo text-dark dark:text-white">
                 <Link
-                  className="panel text-none"
+                  className="panel text-none hstack gap-1"
                   href={`/`}
-                  style={{ width: 140 }}
                 >
                   <Image
-                    className="dark:d-none"
-                    alt="Lexend"
-                    src="/assets/images/common/logo-light.svg"
-                    width="117"
-                    height="40"
+                    alt="Medcol"
+                    src="/assets/images/common/android-chrome-192x192.png"
+                    width="32"
+                    height="32"
                   />
-                  <Image
-                    className="d-none dark:d-block"
-                    alt="Lexend"
-                    src="/assets/images/common/logo-dark.svg"
-                    width="117"
-                    height="40"
-                  />
+                  <span className="fw-bold fs-5" style={{ letterSpacing: "-0.5px" }}>Medcol</span>
                 </Link>
               </div>
               <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
@@ -106,8 +98,8 @@ export default function Header3() {
                     data-uc-drop="mode: click; offset: 0; boundary: !.uc-navbar; animation: uc-animation-slide-top-small; duration: 150;"
                   >
                     <p className="fs-7">
-                      Lexend offers a comprehensive suite of tools that cover
-                      all aspects of your business.
+                      See how Medcol helps clinics start every visit prepared
+                      with AI-powered pre-visit summaries.
                     </p>
                     <form
                       onSubmit={(e) => e.preventDefault()}
@@ -168,12 +160,6 @@ export default function Header3() {
                   </div>
                 </li>
               </ul>
-              <Link
-                className="btn btn-sm btn-primary rounded-default text-white text-none d-none lg:d-inline-flex"
-                href={`/page-pricing`}
-              >
-                Start free trial
-              </Link>
               <a
                 className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
                 onClick={openMobileMenu}

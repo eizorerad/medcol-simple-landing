@@ -61,30 +61,23 @@ export const teamMembers2 = [
   {
     id: 9,
     name: "Leonid Klarov",
-    role: "CEO & Founder",
-    imgSrc: "/assets/images/template/team-01.jpg",
+    role: "CEO",
+    imgSrc: "/assets/images/template/Leonidklarov.png",
     alt: "Leonid Klarov",
   },
   {
     id: 10,
     name: "Anatoly Mariev",
     role: "CBDO",
-    imgSrc: "/assets/images/template/team-02.jpg",
+    imgSrc: "/assets/images/template/AnatoliiMyreev.png",
     alt: "Anatoly Mariev",
   },
   {
     id: 11,
-    name: "Senior AI Engineer",
-    role: "AI & NLP Lead",
-    imgSrc: "/assets/images/template/team-03.jpg",
-    alt: "Senior AI Engineer",
-  },
-  {
-    id: 12,
-    name: "Senior Engineer",
-    role: "Architecture Lead",
-    imgSrc: "/assets/images/template/team-04.jpg",
-    alt: "Senior Engineer",
+    name: "Alexandr Sharipov",
+    role: "CTO",
+    imgSrc: "/assets/images/template/AlexandrShripov.jpeg",
+    alt: "Alexandr Sharipov",
   },
 ];
 

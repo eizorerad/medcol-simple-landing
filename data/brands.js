@@ -1,63 +1,27 @@
 export const brands = [
   {
     id: 1,
-    src: "/assets/images/brands/brand-01.svg",
-    alt: "Proline",
+    src: "/assets/images/brands/checkdoc.png",
+    alt: "Checkdoc",
+    href: "https://checkdoc.kz/",
   },
   {
     id: 2,
-    src: "/assets/images/brands/brand-02.svg",
-    alt: "Iceberg",
+    src: "/assets/images/brands/egov.png",
+    alt: "eGov",
+    href: "https://egov.kz/cms/en",
   },
   {
     id: 3,
-    src: "/assets/images/brands/brand-03.svg",
-    alt: "PinPoint",
+    src: "/assets/images/brands/metaclinic.svg",
+    alt: "Metaclinic",
+    href: "https://metaclinic.kz/",
   },
   {
     id: 4,
-    src: "/assets/images/brands/brand-04.svg",
-    alt: "Clues",
-  },
-  {
-    id: 5,
-    src: "/assets/images/brands/brand-05.svg",
-    alt: "Snowflake",
-  },
-  {
-    id: 6,
-    src: "/assets/images/brands/brand-06.svg",
-    alt: "Proline",
-  },
-  {
-    id: 7,
-    src: "/assets/images/brands/brand-01.svg",
-    alt: "Proline",
-  },
-  {
-    id: 8,
-    src: "/assets/images/brands/brand-02.svg",
-    alt: "Iceberg",
-  },
-  {
-    id: 9,
-    src: "/assets/images/brands/brand-03.svg",
-    alt: "PinPoint",
-  },
-  {
-    id: 10,
-    src: "/assets/images/brands/brand-04.svg",
-    alt: "Clues",
-  },
-  {
-    id: 11,
-    src: "/assets/images/brands/brand-05.svg",
-    alt: "Snowflake",
-  },
-  {
-    id: 12,
-    src: "/assets/images/brands/brand-06.svg",
-    alt: "Proline",
+    src: "/assets/images/brands/candaian.png",
+    alt: "Canadian Diagnostic Network",
+    href: "https://cdncare.ca/",
   },
 ];
 

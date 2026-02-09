@@ -11,9 +11,9 @@ import Pricing from "@/components/common/Pricing";
 import React from "react";
 export const metadata = {
   title:
-    "Home 2 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Home 2 || Medcol - AI-Powered Pre-Visit Preparation",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Medcol - AI-Powered Pre-Visit Preparation",
 };
 export default function HomePage2() {
   return (

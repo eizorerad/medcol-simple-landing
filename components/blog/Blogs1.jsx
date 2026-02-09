@@ -46,7 +46,7 @@ export default function Blogs1() {
           >
             <header className="page-header vstack justify-center items-center gap-2 md:gap-4 text-center max-w-650px mx-auto">
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                Insights
+                Healthcare AI Insights
               </h1>
             </header>
             <div className="row child-cols-12 sm:child-cols-4 col-match gy-4 sm:gy-6 xl:gy-8 gx-2 xl:gx-4">

@@ -56,24 +56,16 @@ export default function Header2() {
             <div className="uc-navbar-left">
               <div className="uc-logo text-dark dark:text-white">
                 <Link
-                  className="panel text-none"
+                  className="panel text-none hstack gap-1"
                   href={`/`}
-                  style={{ width: 140 }}
                 >
                   <Image
-                    className="dark:d-none"
-                    alt="Lexend"
-                    src="/assets/images/common/logo-light.svg"
-                    width="117"
-                    height="40"
+                    alt="Medcol"
+                    src="/assets/images/common/android-chrome-192x192.png"
+                    width="32"
+                    height="32"
                   />
-                  <Image
-                    className="d-none dark:d-block"
-                    alt="Lexend"
-                    src="/assets/images/common/logo-dark.svg"
-                    width="117"
-                    height="40"
-                  />
+                  <span className="fw-bold fs-5" style={{ letterSpacing: "-0.5px" }}>Medcol</span>
                 </Link>
               </div>
               <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2">
@@ -95,12 +87,6 @@ export default function Header2() {
                   <span>Log in</span>
                 </Link>
               </div>
-              <Link
-                className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
-                href={`/page-pricing`}
-              >
-                Start free trial
-              </Link>
               <LanguageSelect2 />
               <a
                 className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
