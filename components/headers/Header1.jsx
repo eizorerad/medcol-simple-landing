@@ -87,9 +87,9 @@ export default function Header1() {
                 </a>
               </div>
               <div className="d-none lg:d-block">
-                <Link className="text-none fw-medium" href={`/sign-in`}>
+                <a className="text-none fw-medium" href="https://prewise.medcol.io/login">
                   <span>Log in</span>
-                </Link>
+                </a>
               </div>
               <Link
                 className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"

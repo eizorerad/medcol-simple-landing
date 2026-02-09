@@ -225,12 +225,12 @@ export default function Header7() {
                 </ul>
               </div>
               <div className="uc-navbar-right">
-                <Link
+                <a
                   className="uc-link fs-5 text-dark dark:text-white"
-                  href={`/sign-in`}
+                  href="https://prewise.medcol.io/login"
                 >
                   Log in
-                </Link>
+                </a>
                 <Link
                   className="btn btn-md btn-tertiary dark:bg-white dark:text-dark border fs-5 lg:px-3 d-none lg:d-inline-flex shadow-xs"
                   href={`/sign-up`}

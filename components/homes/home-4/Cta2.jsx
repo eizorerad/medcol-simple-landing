@@ -20,9 +20,8 @@ export default function Cta2() {
               </p>
               <div className="vstack sm:hstack justify-center gap-1 lg:gap-2 mt-2 lg:mt-4 fdr">
                 <a
-                  onClick={openContactModal}
+                  href="https://prewise.medcol.io/login"
                   className="btn btn-md rounded-default bg-white dark:bg-gray-700 dark:text-white border-gray-900 dark:border-white border-opacity-20 hover:border-opacity-40 shadow-xs"
-                  data-uc-toggle=""
                 >
                   <i className="icon-1 unicon-play-outline fw-medium" />
                   <span>Watch demo</span>

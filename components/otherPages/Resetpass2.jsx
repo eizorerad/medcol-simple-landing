@@ -39,9 +39,9 @@ export default function Resetpass2() {
           </div>
           <p className="mt-2 sm:m-0">
             Remember your password?
-            <Link className="uc-link" href={`/sign-in-2`}>
+            <a className="uc-link" href="https://prewise.medcol.io/login">
               Sign in
-            </Link>
+            </a>
           </p>
         </div>
       </div>

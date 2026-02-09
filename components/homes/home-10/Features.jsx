@@ -219,7 +219,7 @@ export default function Features() {
                     <span>Start chatting</span>
                   </a>
                   <a
-                    href="#"
+                    href="https://prewise.medcol.io/login"
                     className="btn btn-md btn-link fw-bold text-none text-primary dark:text-white"
                   >
                     Free Watch Demo

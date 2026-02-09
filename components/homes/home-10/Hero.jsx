@@ -127,7 +127,7 @@ export default function Hero() {
                         <span>Start chatting</span>
                       </Link>
                       <a
-                        href="#"
+                        href="https://prewise.medcol.io/login"
                         className="btn btn-md btn-link fw-bold text-none text-primary dark:text-tertiary"
                       >
                         Free Watch Demo

@@ -468,7 +468,7 @@ export default function Header6({ staticPosition = false }) {
                       <Link href={`/page-contact-2`}>Contact sales</Link>
                     </li>
                     <li>
-                      <Link href={`/sign-in`}>Log in</Link>
+                      <a href="https://prewise.medcol.io/login">Log in</a>
                     </li>
                   </ul>
                   <Link

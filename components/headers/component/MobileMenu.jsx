@@ -231,7 +231,7 @@ export default function MobileMenu() {
             ))}
             <li className="hr opacity-10 my-1" />
             <li>
-              <Link href={`/sign-in`}>Log in</Link>
+              <a href="https://prewise.medcol.io/login">Log in</a>
             </li>
           </ul>
           <ul className="social-icons nav-x mt-4">

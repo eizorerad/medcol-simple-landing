@@ -244,9 +244,9 @@ export default function Signup() {
                       </form>
                       <p>
                         Already have an account?
-                        <Link className="uc-link" href={`/sign-in`}>
+                        <a className="uc-link" href="https://prewise.medcol.io/login">
                           Sign in
-                        </Link>
+                        </a>
                       </p>
                     </div>
                   </div>

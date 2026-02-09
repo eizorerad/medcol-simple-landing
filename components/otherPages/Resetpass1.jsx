@@ -216,9 +216,9 @@ export default function Resetpass1() {
                       </form>
                       <p className="mt-2 sm:m-0">
                         Remember your password?
-                        <Link className="uc-link" href={`/sign-in`}>
+                        <a className="uc-link" href="https://prewise.medcol.io/login">
                           Sign in
-                        </Link>
+                        </a>
                       </p>
                     </div>
                   </div>

@@ -66,9 +66,9 @@ export default function Signup2() {
           </div>
           <p>
             Already have an account?
-            <Link className="uc-link" href={`/sign-in-2`}>
+            <a className="uc-link" href="https://prewise.medcol.io/login">
               Sign in
-            </Link>
+            </a>
           </p>
         </div>
       </div>
