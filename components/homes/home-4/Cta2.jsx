@@ -26,12 +26,13 @@ export default function Cta2() {
                   <i className="icon-1 unicon-play-outline fw-medium" />
                   <span>Watch demo</span>
                 </a>
-                <Link
-                  href={`/page-contact`}
+                <a
+                  onClick={openContactModal}
                   className="btn btn-md btn-primary rounded-default text-white shadow-xs"
+                  role="button"
                 >
                   Request a demo
-                </Link>
+                </a>
               </div>
               <p className="fs-7 text-dark dark:text-white text-opacity-70 mt-2">
                 Trust-first approach. No ads, no data selling.

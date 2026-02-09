@@ -1,7 +1,35 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Contact1() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(
+      formData.subject || `Contact from ${formData.fullName}`
+    );
+    const body = encodeURIComponent(
+      `Name: ${formData.fullName}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=leo@medcol.io&su=${subject}&body=${body}`;
+    const mailtoUrl = `mailto:leo@medcol.io?subject=${subject}&body=${body}`;
+    const newWindow = window.open(gmailUrl, '_blank');
+    if (!newWindow || newWindow.closed) {
+      window.location.href = mailtoUrl;
+    }
+  };
+
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
       <div
@@ -88,7 +116,7 @@ export default function Contact1() {
                 </div>
                 <div className="order-0 lg:order-1">
                   <form
-                    onSubmit={(e) => e.preventDefault()}
+                    onSubmit={handleSubmit}
                     className="vstack gap-2 p-3 sm:p-6 xl:p-8"
                   >
                     <p className="fs-6 text-dark dark:text-white text-opacity-70 mb-2">
@@ -100,29 +128,40 @@ export default function Contact1() {
                         <input
                           className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                           type="text"
+                          name="fullName"
                           placeholder="Full name"
                           required
+                          value={formData.fullName}
+                          onChange={handleChange}
                         />
                       </div>
                       <div>
                         <input
                           className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                           type="email"
+                          name="email"
                           placeholder="Your email"
                           required
+                          value={formData.email}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
                     <input
                       className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                       type="text"
+                      name="subject"
                       placeholder="Subject"
+                      value={formData.subject}
+                      onChange={handleChange}
                     />
                     <textarea
                       className="form-control min-h-150px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                      name="message"
                       placeholder="Your message.."
                       required
-                      defaultValue={""}
+                      value={formData.message}
+                      onChange={handleChange}
                     />
                     <button
                       className="btn btn-primary btn-md text-white mt-2"
@@ -131,7 +170,7 @@ export default function Contact1() {
                       Send message
                     </button>
                     <p className="text-center">
-                      Or drop us a message via
+                      Or drop us a message via{" "}
                       <a className="uc-link" href="mailto:leo@medcol.io">
                         email
                       </a>

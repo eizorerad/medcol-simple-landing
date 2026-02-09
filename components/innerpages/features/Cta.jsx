@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { openContactModal } from "@/utlis/toggleContactModal";
 
 export default function Cta() {
   return (
@@ -13,12 +15,13 @@ export default function Cta() {
                 Start every visit prepared.
               </h2>
               <div className="vstack sm:hstack justify-center lg:justify-start gap-1 lg:gap-2 mt-1 lg:mt-2">
-                <Link
-                  href={`/page-contact`}
+                <a
+                  onClick={openContactModal}
                   className="btn btn-md lg:btn-lg btn-primary text-white"
+                  role="button"
                 >
                   Start free trial
-                </Link>
+                </a>
               </div>
               <p className="fs-7 text-dark dark:text-white text-opacity-70">
                 Trust-first approach. No ads, no data selling.

@@ -26,12 +26,13 @@ export default function Cta() {
                   <i className="icon-1 unicon-play-outline fw-medium" />
                   <span>Watch demo</span>
                 </a>
-                <Link
-                  href={`/page-contact`}
+                <a
+                  onClick={openContactModal}
                   className="btn btn-md btn-primary rounded-default text-white shadow-xs"
+                  role="button"
                 >
                   Request a demo
-                </Link>
+                </a>
               </div>
             </div>
           </div>

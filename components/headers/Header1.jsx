@@ -80,7 +80,6 @@ export default function Header1() {
                 <a
                   className="text-none fw-medium"
                   onClick={openContactModal}
-                  data-uc-toggle=""
                   role="button"
                 >
                   <span>Request a demo</span>

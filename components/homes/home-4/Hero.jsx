@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { openContactModal } from "@/utlis/toggleContactModal";
 export default function Hero() {
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
@@ -43,15 +44,16 @@ export default function Hero() {
                       </div>
                     </div>
                     <div className="col-12 sm:col-auto">
-                      <Link
-                        href={`/page-contact`}
+                      <a
+                        onClick={openContactModal}
                         className="btn btn-md btn-primary rounded-default h-48px w-100 lg:min-w-150px text-white"
+                        role="button"
                       >
                         <span className="d-none md:d-block">
                           Request a Demo
                         </span>
                         <span className="d-block md:d-none">Get Demo</span>
-                      </Link>
+                      </a>
                     </div>
                   </form>
                   <p className="fs-7 text-dark dark:text-white text-opacity-70">
