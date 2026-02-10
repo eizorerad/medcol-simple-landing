@@ -8,7 +8,7 @@ import React from "react";
 import Testimonials from "@/components/homes/home-3/Testimonials";
 import Blog from "@/components/homes/home-3/Blog";
 import Cta from "@/components/homes/home-3/Cta";
-import Footer2 from "@/components/footers/Footer2";
+import Footer3 from "@/components/footers/Footer3";
 import Brands3 from "@/components/common/Brands2";
 export const metadata = {
   title:
@@ -52,7 +52,7 @@ export default function HomePage3() {
           <Blog />
           <Cta />
         </div>
-        <Footer2 />
+        <Footer3 />
       </div>
     </>
   );

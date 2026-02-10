@@ -1,5 +1,5 @@
 import Footer3 from "@/components/footers/Footer3";
-import Header3 from "@/components/headers/Header3";
+import Header2 from "@/components/headers/Header2";
 import Blogs from "@/components/homes/home-4/Blogs";
 import Brands from "@/components/homes/home-4/Brands";
 import Cta from "@/components/homes/home-4/Cta";
@@ -21,7 +21,7 @@ export default function HomePage4() {
   return (
     <>
       <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg dom-ready bp-xl bp-xxl">
-        <Header3 />
+        <Header2 />
         <div id="wrapper" className="wrap">
           <Hero />
           <Brands />

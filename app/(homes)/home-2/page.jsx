@@ -1,4 +1,4 @@
-import Footer1 from "@/components/footers/Footer1";
+import Footer3 from "@/components/footers/Footer3";
 import Header2 from "@/components/headers/Header2";
 import Blogs from "@/components/homes/home-2/Blogs";
 import Cta from "@/components/homes/home-2/Cta";
@@ -30,7 +30,7 @@ export default function HomePage2() {
           <Blogs />
           <Cta />
         </div>
-        <Footer1 />
+        <Footer3 />
       </div>
     </>
   );

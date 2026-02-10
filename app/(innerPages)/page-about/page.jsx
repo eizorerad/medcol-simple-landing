@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer3 from "@/components/footers/Footer3";
 import About from "@/components/innerpages/About";
 import Brands from "@/components/common/Brands2";
 import About2 from "@/components/innerpages/About2";
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <AboutValues />
           <Cta />
         </div>
-        <Footer2 />
+        <Footer3 />
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer3 from "@/components/footers/Footer3";
 
 import Faq from "@/components/homes/home-2/Faq";
 import Testimonials from "@/components/homes/home-3/Testimonials";
@@ -46,7 +46,7 @@ export default function IntegrationPage() {
           </div>
           <Cta />
         </div>
-        <Footer2 />
+        <Footer3 />
       </div>
     </>
   );

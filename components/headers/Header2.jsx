@@ -5,7 +5,6 @@ import Nav from "./component/Nav";
 import Image from "next/image";
 import { openMobileMenu } from "@/utlis/toggleMobileMenu";
 import { openContactModal } from "@/utlis/toggleContactModal";
-import LanguageSelect2 from "../common/LanguageSelect2";
 
 export default function Header2() {
   const prevScrollPos = useRef(0);
@@ -87,7 +86,6 @@ export default function Header2() {
                   <span>Log in</span>
                 </a>
               </div>
-              <LanguageSelect2 />
               <a
                 className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
                 onClick={openMobileMenu}

@@ -8,7 +8,7 @@ import Feedback from "@/components/homes/home-1/Feedback";
 import Timeline from "@/components/homes/home-1/Timeline";
 import Team from "@/components/homes/home-1/Team";
 import Cta from "@/components/homes/home-1/Cta";
-import Footer1 from "@/components/footers/Footer1";
+import Footer3 from "@/components/footers/Footer3";
 export const metadata = {
   title:
     "Home 1 || Medcol - AI-Powered Pre-Visit Preparation",
@@ -31,7 +31,7 @@ export default function HomePage1() {
           <Team />
           <Cta />
         </div>
-        <Footer1 />
+        <Footer3 />
       </div>
     </>
   );

@@ -1,3 +1,7 @@
+html {
+  scrollbar-gutter: stable;
+}
+
 .uc-navbar-toggle-icon svg [class*="line-"] {
   transition: 0.2s ease-in-out;
   transition-property: transform, opacity;

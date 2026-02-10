@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 import Newsletter from "@/components/blog/Newsletter";
-import Footer1 from "@/components/footers/Footer1";
+import Footer3 from "@/components/footers/Footer3";
 import BlogDetails2 from "@/components/blog/BlogDetails2";
 import { allBlogs } from "@/data/blogs";
 export const metadata = {
@@ -21,7 +21,7 @@ export default async function BlogDetailsPage2(props) {
           <BlogDetails2 blogItem={blogItem} />
           <Newsletter />
         </div>
-        <Footer1 />
+        <Footer3 />
       </div>
     </>
   );

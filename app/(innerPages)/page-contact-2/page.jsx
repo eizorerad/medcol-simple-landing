@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer3 from "@/components/footers/Footer3";
 import Faq from "@/components/homes/home-2/Faq";
 import Brands from "@/components/common/Brands2";
 import Blogs from "@/components/homes/home-2/Blogs";
@@ -45,7 +45,7 @@ export default function ContactPage2() {
           </div>
           <Blogs />
         </div>
-        <Footer2 />
+        <Footer3 />
       </div>
     </>
   );

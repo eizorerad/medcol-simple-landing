@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import LanguageSelect from "../common/LanguageSelect";
 import { footerLinks2, socialLinks } from "@/data/footer";
 
 export default function Footer3() {
@@ -82,8 +81,6 @@ export default function Footer3() {
                   </li>
                 ))}
               </ul>
-              <div className="vr" />
-              <LanguageSelect />
             </div>
           </div>
         </div>

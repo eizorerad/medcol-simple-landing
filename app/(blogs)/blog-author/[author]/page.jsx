@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer3 from "@/components/footers/Footer3";
 import Newsletter from "@/components/blog/Newsletter";
 import BreadCumb from "@/components/blog/BreadCumb";
 import Blogs4 from "@/components/blog/Blogs4";
@@ -22,7 +22,7 @@ export default async function BlogAuthorPage(props) {
           <Blogs4 author={author} />
           <Newsletter />
         </div>
-        <Footer2 />
+        <Footer3 />
       </div>
     </>
   );

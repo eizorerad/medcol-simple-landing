@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer3 from "@/components/footers/Footer3";
 import Hero from "@/components/innerpages/features/Hero";
 import KeyFeatures from "@/components/innerpages/features/KeyFeatures";
 import Faq from "@/components/homes/home-2/Faq";
@@ -47,7 +47,7 @@ export default function FeaturesPage() {
           </div>
           <Cta />
         </div>
-        <Footer2 />
+        <Footer3 />
       </div>
     </>
   );

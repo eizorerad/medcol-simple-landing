@@ -82,6 +82,11 @@ export default function Header3() {
               </ul>
             </div>
             <div className="uc-navbar-right">
+              <div className="d-none lg:d-block">
+                <a className="text-none fw-medium" href="https://prewise.medcol.io/login">
+                  <span>Log in</span>
+                </a>
+              </div>
               <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
                 <li ref={elementRef}>
                   <a

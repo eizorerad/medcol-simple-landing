@@ -67,17 +67,17 @@ export const teamMembers2 = [
   },
   {
     id: 10,
-    name: "Anatoly Mariev",
+    name: "Anatoly Myreev",
     role: "CBDO",
     imgSrc: "/assets/images/template/AnatoliiMyreev.png",
-    alt: "Anatoly Mariev",
+    alt: "Anatoly Myreev",
   },
   {
     id: 11,
-    name: "Alexandr Sharipov",
+    name: "Alexander Sharipov",
     role: "CTO",
     imgSrc: "/assets/images/template/AlexandrShripov.jpeg",
-    alt: "Alexandr Sharipov",
+    alt: "Alexander Sharipov",
   },
 ];
 

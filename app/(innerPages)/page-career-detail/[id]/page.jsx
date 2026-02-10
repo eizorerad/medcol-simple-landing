@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer3 from "@/components/footers/Footer3";
 import JobDetails from "@/components/innerpages/JobDetails";
 import CareerOpenings from "@/components/innerpages/CareerOpenings";
 import Feedback from "@/components/homes/home-2/Feedback";
@@ -47,7 +47,7 @@ export default async function CareerDetailsPage(props) {
           <Feedback />
           <Brands />
         </div>
-        <Footer2 />
+        <Footer3 />
       </div>
     </>
   );

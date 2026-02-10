@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer3 from "@/components/footers/Footer3";
 import Breadcumb from "@/components/otherPages/Breadcumb";
 import Notfound from "@/components/otherPages/404";
 export const metadata = {
@@ -18,7 +18,7 @@ export default function NotFoundPage() {
           <Breadcumb />
           <Notfound />
         </div>
-        <Footer2 />
+        <Footer3 />
       </div>
     </>
   );

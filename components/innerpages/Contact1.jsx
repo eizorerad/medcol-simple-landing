@@ -103,7 +103,7 @@ export default function Contact1() {
                           </p>
                           <div className="vstack gap-0">
                             <p className="fs-6 lg:fs-5 fw-medium">
-                              Dr. Sarah Chen
+                              Dr. Ahmed Al-Mansouri
                             </p>
                             <span className="fs-7 opacity-80">
                               Clinic Director

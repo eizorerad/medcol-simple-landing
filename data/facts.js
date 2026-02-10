@@ -39,7 +39,7 @@ export const factItems = [
   },
   {
     id: 2,
-    value: "10min",
+    value: "7.2min",
     description: "Saved per visit on average",
   },
   {

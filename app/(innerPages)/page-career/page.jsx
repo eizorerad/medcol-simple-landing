@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer3 from "@/components/footers/Footer3";
 import CareerHero from "@/components/innerpages/CareerHero";
 import CareerBenefits from "@/components/innerpages/CareerBenefits";
 import CareerOpenings from "@/components/innerpages/CareerOpenings";
@@ -26,7 +26,7 @@ export default function CareerPage() {
           <Brands />
           <Blogs />
         </div>
-        <Footer2 />
+        <Footer3 />
       </div>
     </>
   );

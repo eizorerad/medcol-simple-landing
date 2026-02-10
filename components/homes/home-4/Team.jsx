@@ -42,6 +42,7 @@ export default function Team() {
                           width={400}
                           height={400}
                           alt={member.alt}
+                          loading="eager"
                         />
                         <div className="panel vstack items-center gap-0">
                           <h6 className="h6 lg:h5 m-0">{member.name}</h6>

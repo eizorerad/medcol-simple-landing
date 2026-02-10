@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { openMobileMenu } from "@/utlis/toggleMobileMenu";
 import { openContactModal } from "@/utlis/toggleContactModal";
-import LanguageSelect2 from "../common/LanguageSelect2";
 import { useEffect, useState } from "react";
 
 export default function Header1() {
@@ -96,7 +95,6 @@ export default function Header1() {
               >
                 Start free trial
               </Link>
-              <LanguageSelect2 />
               <a
                 className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
                 onClick={openMobileMenu}
