@@ -2,7 +2,6 @@ import { blogsPosts4 } from "@/data/blogs";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Pagination from "../common/Pagination";
 
 export default function Blogs1() {
   return (
@@ -126,7 +125,7 @@ export default function Blogs1() {
                   </article>
                 </div>
               ))}
-              {blogsPosts4.slice(1, 7).map((elm, i) => (
+              {blogsPosts4.slice(1).map((elm, i) => (
                 <div key={i}>
                   <article className="post type-post panel vstack gap-3 rounded-3 p-2 pb-3 bg-secondary dark:bg-gray-800">
                     <Link
@@ -188,14 +187,6 @@ export default function Blogs1() {
                   </article>
                 </div>
               ))}
-            </div>
-            <div className="nav-pagination fw-medium">
-              <ul
-                className="nav-x uc-pagination hstack gap-1 justify-center ft-secondary"
-                data-uc-margin=""
-              >
-                <Pagination />
-              </ul>
             </div>
           </div>
         </div>
