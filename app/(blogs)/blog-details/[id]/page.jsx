@@ -3,6 +3,11 @@ import Newsletter from "@/components/blog/Newsletter";
 import Footer3 from "@/components/footers/Footer3";
 import BlogDetails1 from "@/components/blog/BlogDetails1";
 import { allBlogs } from "@/data/blogs";
+
+export function generateStaticParams() {
+  return allBlogs.map((blog) => ({ id: String(blog.id) }));
+}
+
 export const metadata = {
   title:
     "Blog Details || Medcol - AI-Powered Pre-Visit Preparation",

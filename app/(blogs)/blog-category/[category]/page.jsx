@@ -4,6 +4,13 @@ import Footer3 from "@/components/footers/Footer3";
 import Newsletter from "@/components/blog/Newsletter";
 import BreadCumb from "@/components/blog/BreadCumb";
 import Blogs3 from "@/components/blog/Blogs3";
+import { allBlogs } from "@/data/blogs";
+
+export function generateStaticParams() {
+  const categories = [...new Set(allBlogs.map((b) => b.category).filter(Boolean))];
+  return categories.map((category) => ({ category }));
+}
+
 export const metadata = {
   title:
     "Blog Category || Medcol - AI-Powered Pre-Visit Preparation",

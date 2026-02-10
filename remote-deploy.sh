@@ -2,19 +2,20 @@
 set -e
 
 # ============================================
-# Medcol Landing — Deploy Script
+# Medcol Landing — Static Deploy Script
 # ============================================
 # Run from project directory on your Mac:
-#   ./remote-deploy.sh          — upload + rebuild + restart
+#   ./remote-deploy.sh          — build locally + deploy static files
 #   ./remote-deploy.sh logs     — show server logs
 #   ./remote-deploy.sh status   — container status
 #   ./remote-deploy.sh ssh      — open SSH session
-#   ./remote-deploy.sh stop     — stop all containers
+#   ./remote-deploy.sh stop     — stop nginx
 # ============================================
 
 SSH_KEY="$HOME/.ssh/leo"
 SSH_USER="azureuser"
 SSH_HOST="20.174.26.198"
+REMOTE_HTML="/usr/share/nginx/html"
 REMOTE_DIR="/opt/medcol-landing"
 SSH="ssh -i $SSH_KEY $SSH_USER@$SSH_HOST"
 
@@ -23,30 +24,23 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 
 log() { echo -e "${GREEN}[DEPLOY]${NC} $1"; }
-warn() { echo -e "${YELLOW}[WARN]${NC} $1"; }
 
-# Default action: deploy
 deploy() {
-    log "📦 Uploading files to server..."
-    rsync -avz --progress \
+    log "🔨 Building static site locally..."
+    pnpm build
+
+    log "📦 Uploading static files to server..."
+    rsync -avz --delete --progress \
         -e "ssh -i $SSH_KEY" \
-        --exclude 'node_modules' \
-        --exclude '.next' \
-        --exclude '.git' \
-        --exclude '.DS_Store' \
-        --exclude 'documentation' \
-        --exclude 'certbot' \
-        . "$SSH_USER@$SSH_HOST:$REMOTE_DIR/"
+        out/ "$SSH_USER@$SSH_HOST:$REMOTE_DIR/out/"
 
-    log "🔨 Building and restarting on server..."
-    $SSH "cd $REMOTE_DIR && sudo docker compose up -d --build app 2>&1 | tail -10"
+    log "📋 Uploading nginx config..."
+    scp -i "$SSH_KEY" nginx-static.conf "$SSH_USER@$SSH_HOST:$REMOTE_DIR/nginx-static.conf"
 
-    log "⏳ Waiting for app to be healthy..."
-    $SSH "cd $REMOTE_DIR && sleep 8 && sudo docker compose restart nginx 2>&1"
+    log "🔄 Syncing to nginx html root and restarting..."
+    $SSH "sudo rsync -a --delete $REMOTE_DIR/out/ $REMOTE_HTML/ && sudo docker compose -f $REMOTE_DIR/docker-compose.yml restart nginx"
 
     log "✅ Deploy complete!"
-    $SSH "cd $REMOTE_DIR && sudo docker compose ps"
-    echo ""
     log "🌐 Site: https://medcol.io"
 }
 
@@ -60,11 +54,11 @@ case "${1:-deploy}" in
     *)
         echo "Usage: $0 [deploy|logs|status|ssh|stop|restart]"
         echo ""
-        echo "  deploy   Upload files + rebuild + restart (default)"
+        echo "  deploy   Build locally + upload static files (default)"
         echo "  logs     Show live server logs"
         echo "  status   Show container status"
         echo "  ssh      Open SSH session"
-        echo "  stop     Stop all containers"
-        echo "  restart  Restart all containers"
+        echo "  stop     Stop nginx"
+        echo "  restart  Restart nginx"
         ;;
 esac

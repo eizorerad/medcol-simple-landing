@@ -4,6 +4,13 @@ import Footer3 from "@/components/footers/Footer3";
 import Newsletter from "@/components/blog/Newsletter";
 import BreadCumb from "@/components/blog/BreadCumb";
 import Blogs4 from "@/components/blog/Blogs4";
+import { allBlogs } from "@/data/blogs";
+
+export function generateStaticParams() {
+  const authors = [...new Set(allBlogs.map((b) => b.authorName || b.author).filter(Boolean))];
+  return authors.map((author) => ({ author }));
+}
+
 export const metadata = {
   title:
     "Blog Author || Medcol - AI-Powered Pre-Visit Preparation",
