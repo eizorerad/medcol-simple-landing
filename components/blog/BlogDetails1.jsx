@@ -215,12 +215,6 @@ export default function BlogDetails1({ blogItem }) {
                 <RelatedBlogs />
               </div>
             </div>
-            <a
-              href="#commont"
-              className="btn h-56px w-100 mt-8 xl:mt-9 text-black dark:text-white border border-gray-200 dark:border-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800"
-            >
-              <span>Be the first to write a comment.</span>
-            </a>
           </div>
         </div>
       </article>
