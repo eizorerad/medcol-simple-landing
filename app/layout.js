@@ -104,6 +104,20 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" dir="ltr">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9C0QX3J2JL" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9C0QX3J2JL');
+              gtag('config', 'GT-KFH6NB2');
+            `,
+          }}
+        />
+      </head>
       <body suppressHydrationWarning>
         {" "}
         <Context>
