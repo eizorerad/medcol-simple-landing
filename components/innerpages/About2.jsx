@@ -10,27 +10,6 @@ export default function About2() {
       data-anime="onview: -100; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 250;"
     >
       <div className="section-outer panel py-6 xl:py-9 bg-secondary dark:bg-gray-800">
-        <div
-          className="d-none lg:d-block"
-          data-anime="onview: -100; targets: img; scale: [0.8, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 350;"
-        >
-          <div className="position-absolute bottom-0 start-0 ms-n8 mb-6">
-            <Image
-              className="w-150px xl:w-250px d-block dark:d-none"
-              alt="walking"
-              src="/assets/images/template/walking.svg"
-              width="224"
-              height="226"
-            />
-            <Image
-              className="w-150px xl:w-250px d-none dark:d-block"
-              alt="walking-dark"
-              src="/assets/images/template/walking-dark.svg"
-              width="224"
-              height="227"
-            />
-          </div>
-        </div>
         <div className="container max-w-lg">
           <div className="section-inner panel">
             <div
